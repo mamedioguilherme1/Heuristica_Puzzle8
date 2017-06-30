@@ -67,7 +67,7 @@ public class Valor {
 		{
 			for(int i = 0; i < 9; i++)
 			{
-				System.out.print(valor.get(i));
+				System.out.print("_" + valor.get(i) + "_");
 				if((i+1) % 3 == 0 )
 					System.out.println();
 				

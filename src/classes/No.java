@@ -6,7 +6,6 @@ import java.util.Vector;
 public class No {
 	
 	public ArrayList<No> filho = new ArrayList<>();
-	public static int profundidade = 0;
 	public Valor valor;
 	public int _profundidade = 0;
 	
@@ -47,7 +46,7 @@ public class No {
 		if(Main.best.valor.calculaEuristica() < this.filho.get(0).valor.calculaEuristica())
 			Main.best = this.filho.get(0);
 		
-		if((this._profundidade + 1) < 7)
+		if((this._profundidade + 1) < 10)
 		{
 			for (int i = 0; i < filho.size(); i++) {
 				filho.get(i).gerarFilhos();
@@ -61,7 +60,7 @@ public class No {
 		{
 			System.out.println("__________________________________________");
 			System.out.println("NIVEL: " + this._profundidade);
-			System.out.println("HEURISTICA: " + this.valor.calculaEuristica());
+			System.out.println("HEURISTICA: " + this.valor.calculaEuristica() + "%");
 			this.valor.exibe();
 			for(int i = 0; i < filho.size(); i++)
 			{

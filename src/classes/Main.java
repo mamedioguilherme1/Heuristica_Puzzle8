@@ -20,8 +20,8 @@ public class Main {
 		acacia.gerarFilhos();
 		acacia.exibe();
 		
-		System.out.println("______________________________________________");
-		System.out.println("\n\nHeuristica: " + best.valor.calculaEuristica());
+		System.out.println("\n\n________________MELHOR RESULTADO________________");
+		System.out.println("Heuristica: " + best.valor.calculaEuristica() + "%");
 		System.out.println("Nivel: " + best._profundidade);
 		best.valor.exibe();
 		
