@@ -75,14 +75,19 @@ public class Valor {
 		}
 	}
 	
-	public void calculaHeuristica()
+	public float calculaEuristica()
 	{
-		for (int i = 0; i < valor.size(); i++) 
-		{
-			if()
+		int cont = 0;
+		for (int i = 0; i < valor.size(); i++) {
+			if(valor.get(i) == (i+1))
+			{
+				cont++;
+			}
 		}
 		
+		return (100 * cont) / 8;
 	}
+	
 	
 	
 }
