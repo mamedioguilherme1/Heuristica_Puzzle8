@@ -46,7 +46,7 @@ public class No {
 		if(Main.best.valor.calculaEuristica() < this.filho.get(0).valor.calculaEuristica())
 			Main.best = this.filho.get(0);
 		
-		if((this._profundidade + 1) < 10)
+		if((this._profundidade + 1) < 11)
 		{
 			for (int i = 0; i < filho.size(); i++) {
 				filho.get(i).gerarFilhos();
